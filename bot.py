@@ -4,7 +4,8 @@ from discord import app_commands
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
-TOKEN ="TOKEN"
+import os
+TOKEN = os.getenv("TOKEN")
 
 # 자동 멘션할 역할 2개
 ROLE_ID_1 = 1496696724679557271
